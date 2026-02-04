@@ -1115,8 +1115,7 @@ const AppEntry = () => {
         content = <SchedulingScreen onNavigate={navigateTo} params={navigationParams} />;
     } else if (currentScreen === 'TokenDetails') { 
         content = <TokenDetailsScreen onNavigate={navigateTo} params={navigationParams} />;
-    }
-    else if (currentScreen === 'inforegister') {
+    }else if (currentScreen === 'inforegister') {
         content = <DashboardScreen onNavigate={navigateTo} />;    
     }else if (currentScreen === 'qrtokengen') {
         content = <DashboardScreen onNavigate={navigateTo} />;    

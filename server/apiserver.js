@@ -69,6 +69,6 @@ Return ONLY the department name.`;
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running at http://192.168.230.40:${PORT}`);
+  console.log(`🚀 Server running at http://10.14.130.1:${PORT}`);
 
 });
