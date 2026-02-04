@@ -1,0 +1,41 @@
+ {
+  "expo": {
+    "scheme":"sq-scheme",
+    "name": "myqueue",
+    "slug": "myqueue",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.jpg",
+    "userInterfaceStyle": "light",
+
+    "android": {
+                  "package": "com.smartqueue.management"
+               }
+    },
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.jpg",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+  "expo-router",
+  ["expo-camera", { "cameraPermission": "Allow $(PRODUCT_NAME) to access your camera" }]
+]
+  }
+
+
+  
