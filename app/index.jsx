@@ -8,6 +8,9 @@ import { Image } from "react-native";
 import QRCode from 'react-native-qrcode-svg';
 import { all } from 'axios';
 import Logo from '../assets/icon.png';
+import { router } from "expo-router";
+import{useNavigation} from "@react-navigation/native"
+import StaffDashboard from './staffdashboard';
 
 
 // ===============================================
@@ -1027,7 +1030,7 @@ const StaffLoginScreen = ({ onNavigate }) => {
     const [selectedLanguage, setSelectedLanguage] = useState('english');
     const [staffId, setStaffId] = useState('');
     const handleLogin = () => { onNavigate('Dashboard'); };
-    
+    const navigation=useNavigation();
     
     return (
         <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"} style={{ flex: 1 }}>
@@ -1071,16 +1074,11 @@ const StaffLoginScreen = ({ onNavigate }) => {
                     <TextInput style={styles.input} placeholder="Enter your password" placeholderTextColor="#1a83d3" secureTextEntry />
 
                     <View style={styles.sendBtn}>
-                        <Button title="Login" onPress={() => onNavigate('StaffDashboard')} color='#63bd4dff' />
-                       
-                <Link href ="/staffdashboard">
-                  <Text style={styles.statsCount}> Login →</Text>
-                </Link>
-
+                    <Button title="Login" onPress={()=>router.push("/staffdashboard")} color='#63bd4dff' />
                     </View>
                 </View>
             </ScrollView>
-        </KeyboardAvoidingView>
+        </KeyboardAvoidingView> 
     );
 }
 const AppEntry = () => {
