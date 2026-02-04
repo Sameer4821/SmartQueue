@@ -6,11 +6,9 @@ import {Link} from 'expo-router'
 import { Picker } from '@react-native-picker/picker';
 import { Image } from "react-native";
 import QRCode from 'react-native-qrcode-svg';
-import { all } from 'axios';
 import Logo from '../assets/icon.png';
 import { router } from "expo-router";
 import{useNavigation} from "@react-navigation/native"
-import StaffDashboard from './staffdashboard';
 
 
 // ===============================================
@@ -296,7 +294,16 @@ const TokenGenerationScreen = ({ onNavigate, params }) => {
                         </TouchableOpacity>
                     ))}
                 </View>
-
+                <Text style={styles.label}>Symptoms</Text>
+                                <TextInput
+                                    style={{borderColor: '#ccc', borderWidth: 1, borderRadius: 5, padding: 10, minHeight: 100, fontSize: 16, 
+                                     backgroundColor: '#f9f9f9',     paddingTop: 10,}}
+                                    multiline
+                                    numberOfLines={4}  
+                                    placeholder="Enter Your Symptoms"
+                                    placeholderTextColor="#999"
+                                    textAlignVertical="top"
+                                />
                 <Text style={styles.inputLabel}>Primary Department </Text>
                 <Text style={styles.inputHint}>Main department for your visit</Text>
                <View style={styles.pickerContainer}>

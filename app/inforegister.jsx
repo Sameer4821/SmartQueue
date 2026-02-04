@@ -115,6 +115,7 @@ const TriageForm = () => {
     return (
         <ScrollView contentContainerStyle={styles.scrollContainer}>
             <View style={styles.container}>
+                
                 <Text style={styles.headerText}>Multi-Department Token-Generation</Text>
                 <Text style={styles.subHeaderText}>One token for all hospital services</Text>
 
