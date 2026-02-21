@@ -30,16 +30,16 @@ Git + GitHub
 ✔ Scalable backend structure
 
 ##  System Workflow
-Patient logs in using mobile number
-OTP is sent via Twilio
-OTP is verified
-Patient joins digital queue
-Staff updates queue status
-Patients receive real-time updates
+✔ Patient logs in using mobile number
+✔ OTP is sent via Twilio
+✔ OTP is verified
+✔ Patient joins digital queue
+✔ Staff updates queue status
+✔ Patients receive real-time updates
 
 ## Future Enhancements
-AI-based waiting time prediction
-Multi-department queue handling
-Push notifications
-Analytics dashboard
-Multi-hospital scalability
+✔ AI-based waiting time prediction
+✔ Multi-department queue handling
+✔ Push notifications
+✔ Analytics dashboard
+✔ Multi-hospital scalability
